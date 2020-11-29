@@ -16,16 +16,16 @@
             <div class="column-md-4 bg-light">
                 <p class="search-title my-3 text-center">Search for a city!</p>
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Enter City Name" id="mail" name="email">
+                    <input id ="search-city" type="text" class="form-control" placeholder="Enter City Name" name="email">
                     <div class="input-group-append">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
                     </div>
                 </div>
                 <div class="input-group mb-3">
-                    <button type="button" class="btn btn-outline-dark">Clear History</button>
+                    <button type="button" class="btn btn-outline-dark" id="clear-history">Clear History</button>
                 </div>
                 <form id="history">
-                    <input type="text" readonly="true" class="clear-history" placeholder="History" value="">
+                    <input type="text" readonly="true" class="clear" placeholder="History" value="">
                   </form>
             </div>
         </div>
@@ -33,34 +33,50 @@
         <div class="row">
             <div class="column-md-8 bg-light">
                 <div class="row mr-0">
-                    <div class="column-md-12">
+                    <div class="column-md-12 border bg-light">
                         <img id="current city" placeholder="" alt="">
                     </div>
                 </div>
                 <div class="row">
-                    <p id="city-name"></p>
+                    <div class="column-12">
+                        <p id="city-name"></p>
+                    </div>
                 </div>
                 <div class="row">
-                    <p id="current-date"></p>
+                    <div class="column-12">
+                        <p id="current-date"></p>
+                    </div>
                 </div>
                 <div class="row">
-                    <p id="icon">
-                    </p>
+                    <div class="column-12">
+                        <p id="icon"></p>
+                    </div>
                 </div>
                 <div class="row">
-                    <p id="temperature">
-                    </p>
+                    <div class="column-12">
+                        <p id="temperature"></p>
+                    </div>
                 </div>
                 <div class="row">
-                    <p id="humidity"></p>
-                </div>
-                <div class="wind-speed">
+                    <div class="column-12">
+                        <p id="humidity"></p>
+                    </div>    
                 </div>
                 <div class="row">
-                    <p id="uv-index"></p>
+                    <div class="column-12">
+                        <p id="wind-speed"></p>
+                    </div>
                 </div>
-           
+                <div class="row">
+                    <div class="column-12">
+                        <p id="uv-index"></p>
+                    </div>
+                </div>    
             </div>
+        </div>
+        <h2>5 day forecast</h2>
+        <div class="row" id="forecast">
+            
         </div>
     </div>    
     
