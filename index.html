@@ -9,12 +9,12 @@
 </head>
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 text-center">Weather Dashboard</span>
+        <a class="navbar-brand">Weather Dashboard</a>
       </nav>
     <div class="container">
         <div class="row">
             <div class="column-md-4 bg-light">
-                <p class="search-title">Search for a city!</p>
+                <p class="search-title my-3 text-center">Search for a city!</p>
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Enter City Name" id="mail" name="email">
                     <div class="input-group-append">
@@ -25,8 +25,41 @@
                     <button type="button" class="btn btn-outline-dark">Clear History</button>
                 </div>
                 <form id="history">
-                    <input type="text" readonly="true" class="form-control" placeholder="History" value="">
+                    <input type="text" readonly="true" class="clear-history" placeholder="History" value="">
                   </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column-md-8 bg-light">
+                <div class="row mr-0">
+                    <div class="column-md-12">
+                        <img id="current city" placeholder="" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <p id="city-name"></p>
+                </div>
+                <div class="row">
+                    <p id="current-date"></p>
+                </div>
+                <div class="row">
+                    <p id="icon">
+                    </p>
+                </div>
+                <div class="row">
+                    <p id="temperature">
+                    </p>
+                </div>
+                <div class="row">
+                    <p id="humidity"></p>
+                </div>
+                <div class="wind-speed">
+                </div>
+                <div class="row">
+                    <p id="uv-index"></p>
+                </div>
+           
             </div>
         </div>
     </div>    
